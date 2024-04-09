@@ -13,8 +13,9 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Index() // Index is the last / in the URL defined in mapControllerRoute in program.cs
     {
+        // Same name as the IAction name is used when rendering the view
         return View();
     }
 

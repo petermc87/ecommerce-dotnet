@@ -29,3 +29,4 @@
 /home/petermc/Desktop/post_course/ecommerce-.net/MyMvcApp/obj/Debug/net8.0/MyMvcApp.pdb
 /home/petermc/Desktop/post_course/ecommerce-.net/MyMvcApp/obj/Debug/net8.0/MyMvcApp.genruntimeconfig.cache
 /home/petermc/Desktop/post_course/ecommerce-.net/MyMvcApp/obj/Debug/net8.0/ref/MyMvcApp.dll
+/home/petermc/Desktop/post_course/ecommerce-.net/MyMvcApp/bin/Debug/net8.0/appsettings.Production.json
