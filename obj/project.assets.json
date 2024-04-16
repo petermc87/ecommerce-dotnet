@@ -890,6 +890,9 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "NuGet.CommandLine/6.9.1": {
+        "type": "package"
+      },
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
@@ -2924,6 +2927,23 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "NuGet.CommandLine/6.9.1": {
+      "sha512": "FgmFOLcJqeMdgnUV8b/NHYwrL/ti88RPwHhKE0TYXOolvPCiO3Bv6bU/XulXSYRit3fSJ3UViYsd0YRqOoicZg==",
+      "type": "package",
+      "path": "nuget.commandline/6.9.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NOTICES.txt",
+        "README.md",
+        "icon.png",
+        "nuget.commandline.6.9.1.nupkg.sha512",
+        "nuget.commandline.nuspec",
+        "tools/NuGet.exe",
+        "tools/NuGet.pdb"
+      ]
+    },
     "System.CodeDom/4.4.0": {
       "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "type": "package",
@@ -4102,7 +4122,8 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.4",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.4"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.4",
+      "NuGet.CommandLine >= 6.9.1"
     ]
   },
   "packageFolders": {
@@ -4155,6 +4176,12 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.4, )"
+          },
+          "NuGet.CommandLine": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.9.1, )"
           }
         },
         "imports": [

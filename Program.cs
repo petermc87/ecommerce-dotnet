@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using MyMvcApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => // <-- Using entity framework and ssqlserver.
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // <-- Retrieving the connection string from appsettings.json.
+
+
 
 var app = builder.Build();
 

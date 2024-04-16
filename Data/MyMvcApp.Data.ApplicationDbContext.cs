@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MyMvcApp.Data
 {
-    // Db Context is the root class of entity
+    // Default Db Context in entity.
     public class ApplicationDbContext : DbContext
     {
         // We are passing the options into the constructor (below) to the base class.
