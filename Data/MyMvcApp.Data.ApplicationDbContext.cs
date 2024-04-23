@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MyMvcApp.Models;
 
 namespace MyMvcApp.Data
 {
@@ -10,6 +11,8 @@ namespace MyMvcApp.Data
         {
             // DB configuration to be passed to options we be added here.
         }
+        // Create a category table.
+        public DbSet<Category> ? Category { get; set; }
     }
 }
 
